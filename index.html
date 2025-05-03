@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ficha de Produto</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 20px;
+    }
+    .tabs {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ccc;
+    }
+    .tab {
+      padding: 10px;
+      cursor: pointer;
+      border: none;
+      background: none;
+      font-weight: 600;
+      color: #444;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: color 0.3s;
+    }
+    .tab.active {
+      border-bottom: 3px solid #0078d4;
+      color: #0078d4;
+    }
+    .tab i {
+      color: inherit;
+      transition: color 0.3s;
+    }
+    .tab-content {
+      display: none;
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .tab-content.active {
+      display: block;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-label {
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      margin-bottom: 4px;
+      color: #505050;
+    }
+    .form-value {
+      background: #f1f3f4;
+      padding: 10px;
+      border-radius: 6px;
+      font-family: monospace;
+      color: #2d2d2d;
+    }
+    .icon {
+      font-size: 12px;
+      color: #605e5c;
+    }
+    .styled-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "Segoe UI", sans-serif;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      margin-top: 1rem;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .styled-table thead {
+      background-color: #57c1b2;
+      color: white;
+      text-align: left;
+    }
+    .styled-table th,
+    .styled-table td {
+      padding: 12px 16px;
+      font-size: 14px;
+    }
+    .styled-table tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <div class="tabs">
+    <button class="tab active" onclick="showTab('identificacao')"><i class="fas fa-id-badge icon"></i>Identificação</button>
+    <button class="tab" onclick="showTab('escopo')"><i class="fas fa-list icon"></i>Escopo</button>
+    <button class="tab" onclick="showTab('estrategia')"><i class="fas fa-bullseye icon"></i>Estratégia</button>
+    <button class="tab" onclick="showTab('qualificacao')"><i class="fas fa-check-circle icon"></i>Qualificação</button>
+  </div>
+
+  <div id="identificacao" class="tab-content active">
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-box icon"></i>Nome do Produto</label>
+      <div class="form-value">Incentivos, Benefícios e Estratégias Fiscais        
+
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-align-left icon"></i>Descrição do Produto</label>
+      <p class="form-value">
+        Mapeia e aplica incentivos fiscais como ICMS, ISS, IPI e PIS/COFINS, além de regimes especiais e benefícios regionais, conforme o perfil da empresa. Acompanha mudanças na legislação e apoia uma estrutura tributária estratégica e eficiente.
+      </p>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-barcode icon"></i>Código</label>
+      <div class="form-value">TAX004</div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-sitemap icon"></i>Área</label>
+      <div class="form-value">Gestão Tributária</div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-question-circle icon"></i>Classificação BCG</label>
+      <div class="form-value">Interrogação</div>
+    </div>
+    </div>
+
+  </div>
+
+  <div id="escopo" class="tab-content">
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-file-alt icon"></i>Escopo</label>
+      <div class="form-value">
+        <ol data-start="151" data-end="1175">
+          <li data-start="151" data-end="320" class="" style="">
+          <p data-start="154" data-end="320" class=""><strong data-start="154" data-end="184">Diagnóstico Fiscal Inicial</strong><br data-start="184" data-end="187">
+          Levantamento do perfil tributário, regime de apuração, setor e localização da empresa para mapear possíveis oportunidades fiscais.</p>
+          </li>
+          <li data-start="322" data-end="494" class="" style="">
+          <p data-start="325" data-end="494" class=""><strong data-start="325" data-end="367">Identificação de Incentivos Aplicáveis</strong><br data-start="367" data-end="370">
+          Pesquisa e análise de incentivos federais, estaduais e setoriais compatíveis com a operação e situação fiscal da empresa.</p>
+          </li>
+          <li data-start="496" data-end="664" class="" style="">
+          <p data-start="499" data-end="664" class=""><strong data-start="499" data-end="532">Validação Técnica e Econômica</strong><br data-start="532" data-end="535">
+          Estudo de viabilidade com análise de impacto, exigências legais e retorno financeiro potencial de cada benefício identificado.</p>
+          </li>
+          <li data-start="666" data-end="837" class="" style="">
+          <p data-start="669" data-end="837" class=""><strong data-start="669" data-end="709">Recomendação Estratégica Formalizada</strong><br data-start="709" data-end="712">
+          Entrega de um parecer técnico ou relatório com os incentivos viáveis, instruções de acesso e projeções de economia fiscal.</p>
+          </li>
+          <li data-start="839" data-end="1016" class="" style="">
+          <p data-start="842" data-end="1016" class=""><strong data-start="842" data-end="878">Apoio à Implementação Documental</strong><br data-start="878" data-end="881">
+          Suporte pontual na preparação de documentos, protocolos e orientações para formalização junto aos órgãos competentes (se aplicável).</p>
+          </li>
+          <li data-start="1018" data-end="1175" class="" style="">
+          <p data-start="1021" data-end="1175" class=""><strong data-start="1021" data-end="1036">Alinhamento</strong><br data-start="1036" data-end="1039">
+          Interação pontual com as áreas envolvidas para garantir correta integração das estratégias fiscais nos processos internos do cliente.</p>
+          </li>
+          </ol>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-list-check icon"></i>Problemas que Resolve
+      </label>
+      <div class="form-value">
+        <ol data-start="159" data-end="492">
+          <li data-start="159" data-end="216" class="">
+          <p data-start="162" data-end="216" class="">Perda de incentivos e benefícios fiscais disponíveis</p>
+          </li>
+          <li data-start="217" data-end="268" class="">
+          <p data-start="220" data-end="268" class="">Tributação excessiva por falta de planejamento</p>
+          </li>
+          <li data-start="269" data-end="329" class="">
+          <p data-start="272" data-end="329" class="">Falhas na gestão e controle de incentivos já existentes</p>
+          </li>
+          <li data-start="330" data-end="382" class="">
+          <p data-start="333" data-end="382" class="">Riscos fiscais por uso inadequado de benefícios</p>
+          </li>
+          <li data-start="383" data-end="438" class="">
+          <p data-start="386" data-end="438" class="">Barreiras no acesso a regimes especiais e créditos</p>
+          </li>
+          <li data-start="439" data-end="492" class="">
+          <p data-start="442" data-end="492" class="">Menor competitividade por carga tributária elevada</p>
+          </li>
+          </ol>
+      </div>
+
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="	fas fa-trophy icon"></i>Benefícios
+      </label>
+      <div class="form-value">
+        <ol data-start="115" data-end="433">
+          <li data-start="115" data-end="175" class="">
+          <p data-start="118" data-end="175" class="">Redução legal da carga tributária e economia recorrente</p>
+          </li>
+          <li data-start="176" data-end="240" class="">
+          <p data-start="179" data-end="240" class="">Aumento da competitividade com mais margem para crescimento</p>
+          </li>
+          <li data-start="241" data-end="307" class="">
+          <p data-start="244" data-end="307" class="">Melhoria no fluxo de caixa e maior capacidade de investimento</p>
+          </li>
+          <li data-start="308" data-end="365" class="">
+          <p data-start="311" data-end="365" class="">Segurança jurídica nas decisões e menor risco fiscal</p>
+          </li>
+          <li data-start="366" data-end="433" class="">
+          <p data-start="369" data-end="433" class="">Identificação de oportunidades fiscais sob medida para o negócio</p>
+          </li>
+          </ol>
+      </div>
+    </div>
+  </div>
+
+  <div id="estrategia" class="tab-content">
+
+    <div class="form-group">
+        <label class="form-label"><i class="fas fa-fire icon"></i>Prioridade de Venda</label>
+        <div class="form-value">Média</div>
+      </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-lightbulb icon"></i>Quando Ofertar</label>
+      <div class="form-value">
+        
+        <ol data-start="90" data-end="365">
+          <li data-start="90" data-end="132" class="" style="">
+          <p data-start="93" data-end="132" class="">Abertura de novas filiais ou unidades</p>
+          </li>
+          <li data-start="133" data-end="179" class="" style="">
+          <p data-start="136" data-end="179" class="">Lançamento de novos produtos ou processos</p>
+          </li>
+          <li data-start="180" data-end="243" class="" style="">
+          <p data-start="183" data-end="243" class="">Crescimento do faturamento ou mudança de regime tributário</p>
+          </li>
+          <li data-start="244" data-end="306" class="" style="">
+          <p data-start="247" data-end="306" class="">Investimentos em inovação, sustentabilidade ou tecnologia</p>
+          </li>
+          <li data-start="307" data-end="365" class="" style="">
+          <p data-start="310" data-end="365" class="">Elaboração ou revisão do planejamento estratégico anual</p>
+          </li>
+          </ol>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-gem icon"></i>Proposta de Valor</label>
+      <div class="form-value">Por meio de uma análise profunda da realidade tributária da sua empresa, o serviço de Incentivos, Benefícios e Estratégias Fiscais identifica oportunidades reais de economia, estrutura regimes especiais sob medida e assegura o pleno uso de incentivos legais, como Lei do Bem, Subvenções e isenções regionais. Atuamos com inteligência tributária e visão estratégica, entregando não apenas conformidade, mas vantagem competitiva sustentável — sempre com segurança jurídica, método validado e suporte técnico contínuo.
+
+
+
+    </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-shopping-basket icon"></i>Cross-selling</label>
+      <div class="form-value">
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Produto Complementar</th>
+              <th>Justificativa da Conexão</th>
+              <th>Área Responsável</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Planejamento Tributário (TAX002)</td>
+              <td>Fundamental para integrar os incentivos dentro de uma estratégia tributária ampla, evitando riscos e otimizando resultados.</td>
+              <td>Gestão Tributária</td>
+            </tr>
+            <tr>
+              <td>Subvenções para Investimento (TAX009)</td>
+              <td>Complementa os incentivos com foco em projetos específicos que geram benefícios fiscais relevantes.</td>
+              <td>Gestão Tributária</td>
+            </tr>
+            <tr>
+              <td>Lei do Bem - Benefício Fiscal IRPJ CSLL (TAX025)</td>
+              <td>Quando o cliente investe em inovação ou tecnologia, esse benefício pode ser ativado junto com incentivos setoriais.</td>
+              <td>Gestão Tributária</td>
+            </tr>
+            <tr>
+              <td>Consultoria e Assessoria no Requerimento de Depreciação Acelerada (TAX028)</td>
+              <td>Estratégia fiscal complementar, que pode gerar impacto no IRPJ e CSLL em conjunto com os incentivos.</td>
+              <td>Gestão Tributária</td>
+            </tr>
+            <tr>
+              <td>Exclusão do ICMS da Base de Cálculo do PIS e da COFINS (TAX014)</td>
+              <td>Operações de incentivos geralmente precisam estar integradas com teses de exclusão da base, maximizando ganhos.</td>
+              <td>Gestão Tributária</td>
+            </tr>
+            <tr>
+              <td>Compliance Tributário (TAX001)</td>
+              <td>Garante que os incentivos sejam aplicados com segurança jurídica, evitando contingências.</td>
+              <td>Gestão Tributária</td>
+            </tr>
+            <tr>
+              <td>Recuperação de Tributos - PIS / COFINS (TAX005)</td>
+              <td>A análise de incentivos pode evidenciar créditos passados passíveis de recuperação.</td>
+              <td>Gestão Tributária</td>
+            </tr>
+            <tr>
+              <td>Assessoria em Notificações e Intimações Administrativas (TAX007)</td>
+              <td>Clientes que buscam incentivos podem receber questionamentos; essa assessoria é essencial no pós-venda.</td>
+              <td>Gestão Tributária</td>
+            </tr>
+            <tr>
+              <td>Auditoria de Obrigações Acessórias (TAX006)</td>
+              <td>Verifica se os incentivos estão sendo corretamente informados nas obrigações acessórias.</td>
+              <td>Gestão Tributária</td>
+            </tr>
+            <tr>
+              <td>Planejamento Sucessório e Patrimonial (Jurídico)</td>
+              <td>Empresas familiares que acessam benefícios fiscais tendem a avançar em proteção patrimonial e estruturação societária.</td>
+              <td>Jurídico</td>
+            </tr>
+            <tr>
+              <td>Diagnóstico Empresarial (Consultoria Empresarial)</td>
+              <td>Ideal para mapear se a empresa já está utilizando todos os incentivos possíveis — ponto de partida consultivo.</td>
+              <td>Consultoria Empresarial</td>
+            </tr>
+            <tr>
+              <td>BPO Contábil e Tributário – Indústria e Comércio (Contabilidade)</td>
+              <td>Empresas que acessam incentivos demandam um time contábil bem alinhado para operacionalizar os benefícios.</td>
+              <td>Contabilidade</td>
+            </tr>
+            <tr>
+              <td>Compliance Trabalhista e Previdenciária (Consultoria Empresarial)</td>
+              <td>Complementa incentivos voltados à folha (como desoneração), garantindo conformidade e aproveitamento máximo.</td>
+              <td>Consultoria Empresarial</td>
+            </tr>
+          </tbody>
+        </table>
+            
+
+      </div>
+    </div>
+  </div>
+
+  <div id="qualificacao" class="tab-content">
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-briefcase icon"></i>Regime Tributário Atendimento</label>
+      <div class="form-value">Lucro Real e Lucro Presumido</div>
+    </div>
+    <div class="form-group">
+        <label class="form-label"><i class="fas fa-sync-alt icon"></i>Tipo de Cobrança</label>
+        <div class="form-value">Pontual, Êxito</div>
+      </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-globe icon"></i>Abrangência Geográfica</label>
+      <div class="form-value">Nacional</div>
+    </div>
+
+    <div class="form-group">
+        <label class="form-label"><i class=" fas fa-file-invoice-dollar icon"></i>Faturamento Ideal</label>
+        <div class="form-value">Indiferente </div>
+      </div>
+
+    <div class="form-group">
+        <label class="form-label"><i class="fas fa-paperclip icon"></i>Documentos Solicitados</label>
+        <div class="form-value">
+          A partir de 500K mensal
+                </div>
+        
+              </div>
+
+              <div class="form-group">
+                <label class="form-label"><i class=" fas fa-industry icon"></i>Setores ICP</label>
+                <div class="form-value">Transporte, Indústria, Agronegócio. </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label"><i class="fas fa-exclamation-circle icon"></i>Objeções Mapeadas</label>
+                <div class="form-value">
+                 
+                  <table class="styled-table">
+                    <thead>
+                      <tr>
+                        <th>Objeção</th>
+                        <th>O que o cliente quer dizer</th>
+                        <th>Como contornar</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>"Isso aí deve dar problema com o Fisco depois..."</td>
+                        <td>Medo de fiscalização, multas ou parecer ilegal.</td>
+                        <td>"Essa preocupação é válida. Nosso serviço existe justamente para garantir que tudo seja feito com base na legislação vigente, com segurança jurídica e pareceres técnicos. Muitos desses incentivos são, inclusive, promovidos pelo próprio governo."</td>
+                      </tr>
+                      <tr>
+                        <td>"Acho que minha empresa nem se enquadra nessas coisas aí..."</td>
+                        <td>Acredita que não tem porte ou perfil para os benefícios.</td>
+                        <td>"Muitas empresas pensam isso, mas diversos incentivos são voltados justamente para PMEs ou setores estratégicos. Fazemos um diagnóstico personalizado para identificar o que realmente se aplica ao seu caso."</td>
+                      </tr>
+                      <tr>
+                        <td>"Já tenho um contador que cuida dessas coisas…"</td>
+                        <td>Não vê distinção entre contabilidade e estratégia fiscal.</td>
+                        <td>"Seu contador é essencial para a rotina fiscal. Nosso trabalho é complementar, focado em análises aprofundadas de incentivos e oportunidades que muitas vezes passam despercebidas na operação contábil do dia a dia."</td>
+                      </tr>
+                      <tr>
+                        <td>"Mas isso vai dar muito trabalho pra implementar, né?"</td>
+                        <td>Está sobrecarregado ou teme mais tarefas.</td>
+                        <td>"Nosso papel é justamente facilitar. Cuidamos de cronogramas, apoio documental e, se preciso, representamos sua empresa junto aos órgãos. Queremos descomplicar, não trazer mais demandas para você."</td>
+                      </tr>
+                      <tr>
+                        <td>"E se eu fizer tudo isso e no fim não tiver economia nenhuma?"</td>
+                        <td>Tem medo de investir tempo e dinheiro sem retorno.</td>
+                        <td>"Começamos com um diagnóstico técnico e, quando possível, atuamos por êxito. Assim você só investe se houver resultado. Transparência e mensuração são pilares do nosso trabalho."</td>
+                      </tr>
+                      <tr>
+                        <td>"Agora não é o momento, vamos deixar pra depois…"</td>
+                        <td>Está inseguro ou com outras prioridades.</td>
+                        <td>"Compreendo. Mas alguns incentivos têm prazos e podem gerar economia até retroativa. Posso fazer uma análise preliminar sem compromisso, para que você tenha os dados certos quando decidir avançar."</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  
+                  
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label"><i class=" fas fa-industry icon"></i>Personas</label>
+                <div class="form-value">
+                    <ul data-start="107" data-end="257">
+                        <li data-start="107" data-end="173" class="" style="">
+                        <p data-start="109" data-end="173" class=""><strong data-start="109" data-end="129">Influenciadores:</strong> Consultor, Controller, Gerente Financeiro</p>
+                        </li>
+                        <li data-start="174" data-end="257" class="" style="">
+                        <p data-start="176" data-end="257" class=""><strong data-start="176" data-end="190">Decisores:</strong> CFO, Proprietários, Sócios</p>
+                        </li>
+                        </ul> </div>
+              </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-star-half-alt icon"></i>Diferenciais</label>
+      <div class="form-value">A Funcional atua de forma ativa e estratégica na identificação e viabilização de incentivos fiscais. Nosso diferencial está em não depender de sistemas genéricos ou levantamentos superficiais: cruzamos dados contábeis, fiscais e operacionais para mapear benefícios aderentes ao perfil da empresa e ao seu setor de atuação, considerando legislações municipais, estaduais e federais.
+
+        Mais do que encontrar incentivos, ajudamos a estruturar a documentação, orientar a aplicação correta e garantir a segurança jurídica da empresa. Também avaliamos riscos, simulações de impacto, exigências acessórias e eventuais contrapartidas, permitindo uma decisão consciente e vantajosa.
+        
+        Nossa abordagem é consultiva, atualizada e sempre voltada para resultados mensuráveis – com redução legal da carga tributária e aumento da competitividade da empresa.</div>
+    </div>
+  </div>
+
+  <script>
+    function showTab(id) {
+      document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      document.querySelector(`.tab[onclick="showTab('${id}')"]`).classList.add('active');
+    }
+  </script>
+</body>
+</html>
